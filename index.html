@@ -5,21 +5,31 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="./main.js" defer></script>
   <title>Calculadora de IMC</title>
 </head>
 <body>
-  <div class="calculadora">
-    <h1>Calculadora de IMC</h1>
-    <div class="peso">
-      <label for="peso">Peso</label>
-      <input type="text" id="peso">
+  <div class="calculator">
+    <div class="title">
+      <h1>Calculadora de IMC</h1>
     </div>
-    <div class="altura">
-      <label for="altura">Peso</label>
-      <input type="text" id="altura">
+    <div class="weight">
+      <label for="weight">Peso em kg</label>
+      <i class="fa-sharp fa-solid fa-weight-hanging" style="color: #5863f8;"></i>
+      <input type="text" id="weight" placeholder="Exemplo: 67">
     </div>
-    <button>Calcular</button>
-    
+    <div class="height">
+      <label for="height">Altura em metros</label>
+      <input type="text" id="height" placeholder="Exemplo: 1.78">
+    </div>
+    <button id="calcButton">Calcular</button>
+    <div id="showImc">
+      <p id="textImc"></p>
+    </div>
   </div>
 </body>
 </html>
