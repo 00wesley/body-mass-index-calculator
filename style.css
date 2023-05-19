@@ -10,7 +10,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #04080F;
+  background-color: #000;
 }
 
 .calculator {
@@ -55,5 +55,7 @@ input {
 
 #showImc {
   color: #CECCCC;
+  text-align: start;
+  width: 200px;
 }
 
